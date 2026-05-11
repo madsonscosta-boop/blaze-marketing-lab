@@ -140,7 +140,7 @@ function Footer() {
             <img src={logo} alt="FIG" className="h-10 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Vídeo e tráfego pago para marcas que querem deixar de ser invisíveis.
+            Fig the out.
           </p>
         </div>
         <div>

@@ -45,7 +45,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="border-t border-border/40 bg-background">
+      <section className="border-t border-border/40 bg-card">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <div>
@@ -103,18 +103,18 @@ function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-border/40">
+      <section className="border-t border-border/40 bg-brand text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <p className="font-display text-4xl leading-tight md:text-6xl">
             “Em três meses, a FIG fez o nosso CAC cair{" "}
-            <span className="text-brand-glow italic">pela metade</span> e o
+            <span className="text-cream italic">pela metade</span> e o
             volume de vídeo subir 4x. Hoje a gente não roda nada sem eles.”
           </p>
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-cream" />
             <div>
               <p className="font-medium">Marina Lopes</p>
-              <p className="text-sm text-muted-foreground">Head of Growth, Pluma DTC</p>
+              <p className="text-sm text-primary-foreground/70">Head of Growth, Pluma DTC</p>
             </div>
           </div>
         </div>

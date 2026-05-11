@@ -45,58 +45,26 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="border-t border-border/40 bg-brand text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-6 py-28">
-          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-cream">Serviços</p>
-              <h2 className="mt-3 max-w-2xl font-display text-5xl md:text-6xl">
-                Criativo e mídia, no mesmo time.
-              </h2>
-            </div>
-            <p className="max-w-md text-primary-foreground/75">
-              Times separados produzem campanhas mornas. A gente une produção
-              de vídeo, estratégia e gestão de mídia sob o mesmo teto.
-            </p>
-          </div>
-
-          <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <section className="bg-cream px-6 py-20">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-background px-6 py-20 text-center md:px-16 md:py-24">
+          <h2 className="font-display text-4xl text-brand md:text-5xl">
+            Nossos serviços de mídia social
+          </h2>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              {
-                t: "Vídeo",
-                d: "Roteiros, produção e edição com foco em performance — UGC, anúncios cinematográficos e conteúdo orgânico.",
-                items: ["Direção criativa", "Captação 4K", "Pós + motion"],
-              },
-              {
-                t: "Tráfego pago",
-                d: "Gestão diária em Meta, Google, TikTok e YouTube com modelagem de funil e otimização semanal.",
-                items: ["Meta Ads", "Google Ads", "TikTok / YouTube"],
-              },
-              {
-                t: "Estratégia",
-                d: "Posicionamento, oferta e copy que faz o criativo trabalhar — antes de a câmera ligar.",
-                items: ["Posicionamento", "Oferta + copy", "Funil de conversão"],
-              },
-            ].map((s) => (
-              <article
-                key={s.t}
-                className="group relative overflow-hidden rounded-3xl border border-cream/20 bg-cream p-8 text-accent-foreground transition hover:border-cream"
+              "Estratégia Social",
+              "Gestão de Redes Sociais",
+              "Criação de Conteúdo",
+              "Conteúdo Criativo",
+              "Tráfego Pago",
+              "Produção de Vídeo",
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="cursor-default rounded-full border border-brand px-6 py-2.5 text-sm text-brand transition hover:bg-brand hover:text-primary-foreground"
               >
-                <p className="font-display text-3xl">{s.t}</p>
-                <p className="mt-3 text-sm text-accent-foreground/70">{s.d}</p>
-                <ul className="mt-8 space-y-2 text-sm">
-                  {s.items.map((i) => (
-                    <li key={i} className="flex items-center gap-2 text-accent-foreground/80">
-                      <span className="h-1 w-1 rounded-full bg-brand" />
-                      {i}
-                    </li>
-                  ))}
-                </ul>
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -bottom-24 -right-24 h-48 w-48 rounded-full bg-brand-glow/30 opacity-0 blur-3xl transition group-hover:opacity-100"
-                />
-              </article>
+                {tag}
+              </span>
             ))}
           </div>
         </div>

@@ -94,23 +94,36 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function Header() {
+  const [open, setOpen] = useState(false);
+  const linkCls = "rounded-full px-4 py-2 text-background/80 transition hover:bg-background/10 hover:text-background";
   return (
     <header className="sticky top-4 z-50 px-4">
-      <div className="mx-auto flex w-fit max-w-[95%] items-center gap-2 rounded-full border border-white/10 bg-foreground/90 px-2 py-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl md:gap-4 md:px-3">
-        <Link to="/" className="flex items-center gap-2 pl-2">
+      <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-white/10 bg-foreground/90 px-2 py-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
+        <Link to="/" className="flex items-center gap-2 pl-2" onClick={() => setOpen(false)}>
           <img src={logo} alt="FIG" className="h-7 w-7 rounded-full" />
           <span className="font-display text-lg leading-none tracking-tight">FIG</span>
         </Link>
-        <span className="hidden h-5 w-px bg-background/20 md:block" />
-        <nav className="hidden items-center gap-1 text-sm md:flex">
-          <Link to="/servicos" className="rounded-full px-3 py-1.5 text-background/70 transition hover:bg-background/10 hover:text-background" activeProps={{ className: "bg-background/10 text-background" }}>Serviços</Link>
-          <Link to="/trabalhos" className="rounded-full px-3 py-1.5 text-background/70 transition hover:bg-background/10 hover:text-background" activeProps={{ className: "bg-background/10 text-background" }}>Trabalhos</Link>
-          <Link to="/sobre" className="rounded-full px-3 py-1.5 text-background/70 transition hover:bg-background/10 hover:text-background" activeProps={{ className: "bg-background/10 text-background" }}>Sobre</Link>
-        </nav>
-        <Link to="/contato" className="rounded-full bg-brand px-4 py-1.5 text-sm font-medium text-white transition hover:bg-brand-glow">
-          Falar
-        </Link>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={open}
+          className="flex h-9 w-9 items-center justify-center rounded-full text-background/80 transition hover:bg-background/10 hover:text-background"
+        >
+          {open ? <X size={18} /> : <Menu size={18} />}
+        </button>
       </div>
+
+      {open && (
+        <div className="mx-auto mt-3 w-fit rounded-3xl border border-white/10 bg-foreground/90 p-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
+          <nav className="flex flex-col text-sm">
+            <Link to="/servicos" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Serviços</Link>
+            <Link to="/trabalhos" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Trabalhos</Link>
+            <Link to="/sobre" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Sobre</Link>
+            <Link to="/contato" className="mt-1 rounded-full bg-brand px-4 py-2 text-center text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Falar</Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

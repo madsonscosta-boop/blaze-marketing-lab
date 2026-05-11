@@ -26,7 +26,7 @@ function Index() {
           </div>
 
           {/* pitch card */}
-          <div className="mt-24 rounded-3xl bg-cream px-8 py-16 text-center text-accent-foreground md:px-16 md:py-20">
+          <div className="mt-24 rounded-3xl bg-brand px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20">
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
               Uma agência criativa social-first para marcas de lifestyle.
             </p>
@@ -35,7 +35,7 @@ function Index() {
             </p>
             <Link
               to="/contato"
-              className="mt-10 inline-flex flex-col items-center rounded-full border border-accent-foreground/40 px-8 py-3 text-sm leading-tight transition hover:bg-accent-foreground/5"
+              className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10"
             >
               <span>Gostou do que viu?</span>
               <span>Fale com a gente!</span>

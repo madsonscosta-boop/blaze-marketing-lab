@@ -29,7 +29,7 @@ function Index() {
           {/* pitch card */}
           <div className="mt-24 rounded-3xl bg-brand px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20">
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
-              Uma agência criativa social-first para marcas de lifestyle.
+              Uma agência criativa social-first para marcas de todos os segmentos.
             </p>
             <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
               Fortalecemos o brand awareness e crescemos comunidades nas redes sociais através de conteúdo que engaja.
@@ -49,7 +49,7 @@ function Index() {
       <section className="bg-cream px-6 pt-20">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-5">
           {[
-            { src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80", alt: "Lifestyle alimentação", cls: "md:col-span-1 md:row-span-1 aspect-[4/3]" },
+            { src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80", alt: "Marca de alimentação", cls: "md:col-span-1 md:row-span-1 aspect-[4/3]" },
             { src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80", alt: "Evento sazonal", cls: "md:col-span-1 md:row-span-1 aspect-[4/3]" },
             { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80", alt: "Gastronomia", cls: "md:col-span-2 md:row-span-1 aspect-[16/9]" },
             { src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80", alt: "Esporte", cls: "md:col-span-2 md:row-span-1 aspect-[16/10]" },
@@ -112,12 +112,12 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-28 md:grid-cols-2 md:gap-16">
           <div className="flex flex-col justify-center">
             <p className="font-display text-2xl leading-snug md:text-3xl">
-              Parceiro de mídia social preferido de marcas de lifestyle
-              emergentes e consolidadas.
+              Parceiro de mídia social preferido por marcas
+              emergentes e consolidadas de todos os segmentos.
             </p>
             <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
-              Somos a confiança de marcas incríveis nos setores de
-              hospitalidade, alimentação, bebidas, esporte e lazer.
+              Atendemos negócios de tecnologia, varejo, serviços, indústria,
+              saúde, educação, gastronomia e muito mais.
             </p>
           </div>
 

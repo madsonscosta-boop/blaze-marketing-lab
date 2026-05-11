@@ -99,9 +99,8 @@ function Header() {
   return (
     <header className="sticky top-4 z-50 px-4">
       <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-white/10 bg-foreground/90 px-2 py-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
-        <Link to="/" className="flex items-center gap-2 pl-2" onClick={() => setOpen(false)}>
-          <img src={logo} alt="FIG" className="h-7 w-7 rounded-full" />
-          <span className="font-display text-lg leading-none tracking-tight">FIG</span>
+        <Link to="/" className="flex items-center pl-2" onClick={() => setOpen(false)}>
+          <img src={logo} alt="FIG" className="h-7 w-auto" />
         </Link>
         <button
           type="button"

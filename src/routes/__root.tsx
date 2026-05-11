@@ -133,8 +133,7 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="FIG" className="h-10 w-10 rounded-md" />
-            <span className="font-display text-3xl">FIG</span>
+            <img src={logo} alt="FIG" className="h-12 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Vídeo e tráfego pago para marcas que querem deixar de ser invisíveis.

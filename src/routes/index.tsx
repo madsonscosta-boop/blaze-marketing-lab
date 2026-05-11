@@ -120,26 +120,65 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-cream text-accent-foreground">
-        <div className="mx-auto max-w-7xl px-6 py-28">
-          <div className="grid items-end gap-10 md:grid-cols-2">
-            <h2 className="font-display text-6xl leading-[0.95] md:text-7xl">
-              Pronto pra <span className="italic">parar de ser ignorado?</span>
-            </h2>
-            <div>
-              <p className="text-lg text-accent-foreground/70">
-                Em 30 minutos a gente identifica onde o seu funil está vazando
-                atenção — e o que dá pra resolver nos próximos 60 dias.
-              </p>
-              <Link
-                to="/contato"
-                className="mt-8 inline-flex rounded-full bg-brand px-7 py-3.5 text-base font-medium text-primary-foreground transition hover:bg-brand-glow"
-              >
-                Agendar diagnóstico gratuito
-              </Link>
+      {/* CTA — formulário */}
+      <section className="bg-cream px-6 py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-brand px-6 py-16 text-primary-foreground md:px-16 md:py-20">
+          <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
+            Gostou do que viu?
+            <br />
+            Vamos fazer acontecer!
+          </h2>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Obrigado! Em breve entraremos em contato.");
+            }}
+            className="mx-auto mt-12 grid max-w-3xl gap-5"
+          >
+            <div className="grid gap-5 md:grid-cols-2">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Nome"
+                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+              />
+              <input
+                type="tel"
+                name="phone"
+                required
+                placeholder="Telefone"
+                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="E-mail"
+                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+              />
+              <input
+                type="text"
+                name="company"
+                placeholder="Empresa"
+                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+              />
             </div>
-          </div>
+            <textarea
+              name="message"
+              rows={5}
+              required
+              placeholder="Como podemos te ajudar?"
+              className="rounded-3xl bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+            />
+            <button
+              type="submit"
+              className="mx-auto mt-2 rounded-full border border-primary-foreground/80 px-10 py-3 text-base font-medium transition hover:bg-primary-foreground/10"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
       </section>
     </>

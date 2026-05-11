@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -52,19 +53,30 @@ function Index() {
           </h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              "Estratégia Social",
-              "Gestão de Redes Sociais",
-              "Criação de Conteúdo",
-              "Conteúdo Criativo",
-              "Tráfego Pago",
-              "Produção de Vídeo",
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="cursor-default rounded-full border border-brand px-6 py-2.5 text-sm text-brand transition hover:bg-brand hover:text-primary-foreground"
-              >
-                {tag}
-              </span>
+              { t: "Estratégia Social", d: "Planejamento de posicionamento, pilares de conteúdo e calendário editorial alinhados ao seu público e aos objetivos de marca." },
+              { t: "Gestão de Redes Sociais", d: "Operação diária dos seus canais: publicação, comunidade, atendimento e relatórios mensais com insights acionáveis." },
+              { t: "Criação de Conteúdo", d: "Produção de fotos, reels e carrosséis que traduzem a identidade da marca em conteúdo nativo de cada plataforma." },
+              { t: "Conteúdo Criativo", d: "Conceitos originais, campanhas e formatos pensados para gerar conversa, salvar e compartilhar — não só impressões." },
+              { t: "Tráfego Pago", d: "Gestão de mídia em Meta, Google, TikTok e YouTube com modelagem de funil, criativos performáticos e otimização semanal para reduzir CAC e escalar resultados." },
+              { t: "Produção de Vídeo", d: "Roteiro, captação e edição de vídeos para anúncios, UGC e conteúdo orgânico com foco em performance e narrativa." },
+            ].map((s) => (
+              <Popover key={s.t}>
+                <PopoverTrigger asChild>
+                  <button
+                    type="button"
+                    className="rounded-full border border-brand px-6 py-2.5 text-sm text-brand transition hover:bg-brand hover:text-primary-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                  >
+                    {s.t}
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent
+                  side="top"
+                  className="max-w-xs rounded-2xl border-brand/30 bg-brand text-primary-foreground"
+                >
+                  <p className="font-display text-lg">{s.t}</p>
+                  <p className="mt-2 text-sm text-primary-foreground/85">{s.d}</p>
+                </PopoverContent>
+              </Popover>
             ))}
           </div>
         </div>

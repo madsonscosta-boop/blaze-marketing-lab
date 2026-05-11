@@ -45,16 +45,16 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="border-t border-border/40 bg-card">
+      <section className="border-t border-border/40 bg-brand text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">Serviços</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-cream">Serviços</p>
               <h2 className="mt-3 max-w-2xl font-display text-5xl md:text-6xl">
                 Criativo e mídia, no mesmo time.
               </h2>
             </div>
-            <p className="max-w-md text-muted-foreground">
+            <p className="max-w-md text-primary-foreground/75">
               Times separados produzem campanhas mornas. A gente une produção
               de vídeo, estratégia e gestão de mídia sob o mesmo teto.
             </p>
@@ -80,21 +80,21 @@ function Index() {
             ].map((s) => (
               <article
                 key={s.t}
-                className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 transition hover:border-brand-glow"
+                className="group relative overflow-hidden rounded-3xl border border-cream/20 bg-cream p-8 text-accent-foreground transition hover:border-cream"
               >
                 <p className="font-display text-3xl">{s.t}</p>
-                <p className="mt-3 text-sm text-muted-foreground">{s.d}</p>
+                <p className="mt-3 text-sm text-accent-foreground/70">{s.d}</p>
                 <ul className="mt-8 space-y-2 text-sm">
                   {s.items.map((i) => (
-                    <li key={i} className="flex items-center gap-2 text-foreground/80">
-                      <span className="h-1 w-1 rounded-full bg-brand-glow" />
+                    <li key={i} className="flex items-center gap-2 text-accent-foreground/80">
+                      <span className="h-1 w-1 rounded-full bg-brand" />
                       {i}
                     </li>
                   ))}
                 </ul>
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -bottom-24 -right-24 h-48 w-48 rounded-full bg-brand/30 opacity-0 blur-3xl transition group-hover:opacity-100"
+                  className="pointer-events-none absolute -bottom-24 -right-24 h-48 w-48 rounded-full bg-brand-glow/30 opacity-0 blur-3xl transition group-hover:opacity-100"
                 />
               </article>
             ))}

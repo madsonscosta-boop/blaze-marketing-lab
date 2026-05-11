@@ -65,11 +65,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "FIG — Vídeo & Tráfego pago que vende" },
-      { name: "description", content: "Agência de marketing digital especializada em vídeo e tráfego pago. Atenção que vira receita." },
+      { name: "description", content: "Digital Growth Hub creates marketing websites for digital agencies, focusing on video and paid traffic." },
       { property: "og:title", content: "FIG — Vídeo & Tráfego pago que vende" },
-      { property: "og:description", content: "Atenção que vira receita. Vídeo + tráfego pago." },
+      { property: "og:description", content: "Digital Growth Hub creates marketing websites for digital agencies, focusing on video and paid traffic." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "FIG — Vídeo & Tráfego pago que vende" },
+      { name: "twitter:description", content: "Digital Growth Hub creates marketing websites for digital agencies, focusing on video and paid traffic." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/80465f5f-4403-4b46-919a-ef71133e7d3f/id-preview-df8c1638--7b4596f0-703e-4847-a1ce-bafb29ceb9fe.lovable.app-1778519504970.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/80465f5f-4403-4b46-919a-ef71133e7d3f/id-preview-df8c1638--7b4596f0-703e-4847-a1ce-bafb29ceb9fe.lovable.app-1778519504970.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -133,10 +137,11 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="FIG" className="h-12 w-auto" />
+            <img src={logo} alt="FIG" className="h-10 w-10 rounded-md" />
+            <span className="font-display text-3xl">FIG</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            fig the out
+            Vídeo e tráfego pago para marcas que querem deixar de ser invisíveis.
           </p>
         </div>
         <div>
@@ -151,7 +156,7 @@ function Footer() {
         <div>
           <p className="text-xs uppercase tracking-widest text-muted-foreground">Contato</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><a href="mailto:halo@figtheagency.com" className="hover:text-brand-glow">halo@figtheagency.com</a></li>
+            <li><a href="mailto:ola@fig.agency" className="hover:text-brand-glow">ola@fig.agency</a></li>
             <li><a href="https://instagram.com" className="hover:text-brand-glow">@fig.agency</a></li>
           </ul>
         </div>

@@ -68,18 +68,18 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.16 0.04 280);
+  --background: oklch(0.22 0.08 282);
   --foreground: oklch(0.97 0.01 320);
-  --brand: oklch(0.45 0.30 275);
-  --brand-glow: oklch(0.62 0.22 278);
+  --brand: oklch(0.66 0.19 285);
+  --brand-glow: oklch(0.78 0.14 285);
   --cream: oklch(0.93 0.025 350);
-  --card: oklch(0.20 0.05 280);
+  --card: oklch(0.28 0.09 283);
   --card-foreground: oklch(0.97 0.01 320);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.45 0.30 275);
-  --primary-foreground: oklch(0.97 0.01 320);
-  --secondary: oklch(0.62 0.22 278);
+  --primary: oklch(0.66 0.19 285);
+  --primary-foreground: oklch(0.99 0.01 285);
+  --secondary: oklch(0.78 0.14 285);
   --secondary-foreground: oklch(0.10 0.04 280);
   --muted: oklch(0.24 0.04 280);
   --muted-foreground: oklch(0.72 0.03 300);

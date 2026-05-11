@@ -25,18 +25,21 @@ function Index() {
             </div>
           </div>
 
-          {/* stats */}
-          <div className="mt-24 grid gap-8 border-t border-border/50 pt-10 md:grid-cols-3">
-            {[
-              { k: "3.2x", v: "ROAS médio em campanhas Meta + Google" },
-              { k: "+180", v: "vídeos produzidos por mês" },
-              { k: "48h", v: "do briefing ao primeiro criativo no ar" },
-            ].map((s) => (
-              <div key={s.k}>
-                <p className="font-display text-6xl text-brand-glow">{s.k}</p>
-                <p className="mt-2 max-w-[16rem] text-sm text-muted-foreground">{s.v}</p>
-              </div>
-            ))}
+          {/* pitch card */}
+          <div className="mt-24 rounded-3xl bg-[oklch(0.66_0.18_45)] px-8 py-16 text-center text-white md:px-16 md:py-20">
+            <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
+              Uma agência criativa social-first para marcas de lifestyle.
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
+              Fortalecemos o brand awareness e crescemos comunidades nas redes sociais através de conteúdo que engaja.
+            </p>
+            <Link
+              to="/contato"
+              className="mt-10 inline-flex flex-col items-center rounded-full border border-white/80 px-8 py-3 text-sm leading-tight transition hover:bg-white/10"
+            >
+              <span>Gostou do que viu?</span>
+              <span>Fale com a gente!</span>
+            </Link>
           </div>
         </div>
       </section>

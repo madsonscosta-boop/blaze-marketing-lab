@@ -17,7 +17,7 @@ function Index() {
               "radial-gradient(60% 50% at 20% 10%, oklch(0.45 0.30 275 / 0.5), transparent 70%), radial-gradient(50% 60% at 90% 30%, oklch(0.62 0.22 278 / 0.35), transparent 70%)",
           }}
         />
-        <div className="mx-auto max-w-7xl px-6 pt-24 pb-32">
+        <div className="mx-auto max-w-7xl px-6 pt-10 pb-32">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/40 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-glow" />
             Vagas abertas para Q3 — 2 marcas por mês

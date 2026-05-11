@@ -45,6 +45,31 @@ function Index() {
         </div>
       </section>
 
+      {/* GALLERY MOSAIC */}
+      <section className="bg-cream px-6 pt-20">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-5">
+          {[
+            { src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80", alt: "Lifestyle alimentação", cls: "md:col-span-1 md:row-span-1 aspect-[4/3]" },
+            { src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80", alt: "Evento sazonal", cls: "md:col-span-1 md:row-span-1 aspect-[4/3]" },
+            { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80", alt: "Gastronomia", cls: "md:col-span-2 md:row-span-1 aspect-[16/9]" },
+            { src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80", alt: "Esporte", cls: "md:col-span-2 md:row-span-1 aspect-[16/10]" },
+            { src: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1000&q=80", alt: "Estádio", cls: "md:col-span-2 md:row-span-1 aspect-[16/10]" },
+          ].map((img) => (
+            <div
+              key={img.src}
+              className={`overflow-hidden rounded-2xl bg-background ${img.cls}`}
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className="h-full w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section className="bg-cream px-6 py-20">
         <div className="mx-auto max-w-7xl rounded-3xl bg-background px-6 py-20 text-center md:px-16 md:py-24">

@@ -72,8 +72,8 @@ function Index() {
 
       {/* SERVICES */}
       <section className="bg-cream px-6 py-20">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-background px-6 py-20 text-center md:px-16 md:py-24">
-          <h2 className="font-display text-4xl text-brand md:text-5xl">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-brand px-6 py-20 text-center md:px-16 md:py-24">
+          <h2 className="font-display text-4xl text-cream md:text-5xl">
             Nossos serviços de mídia social
           </h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -89,17 +89,17 @@ function Index() {
                 <PopoverTrigger asChild>
                   <button
                     type="button"
-                    className="rounded-full border border-brand px-6 py-2.5 text-sm text-brand transition hover:bg-brand hover:text-primary-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                    className="rounded-full border border-cream px-6 py-2.5 text-sm text-cream transition hover:bg-cream hover:text-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-cream"
                   >
                     {s.t}
                   </button>
                 </PopoverTrigger>
                 <PopoverContent
                   side="top"
-                  className="max-w-xs rounded-2xl border-brand/30 bg-brand text-primary-foreground"
+                  className="max-w-xs rounded-2xl border-brand/30 bg-cream text-brand"
                 >
                   <p className="font-display text-lg">{s.t}</p>
-                  <p className="mt-2 text-sm text-primary-foreground/85">{s.d}</p>
+                  <p className="mt-2 text-sm text-brand/80">{s.d}</p>
                 </PopoverContent>
               </Popover>
             ))}

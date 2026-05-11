@@ -18,31 +18,11 @@ function Index() {
           }}
         />
         <div className="mx-auto max-w-7xl px-6 pt-10 pb-32">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/40 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-glow" />
-            Vagas abertas para Q3 — 2 marcas por mês
-          </div>
-          <h1 className="mt-6 max-w-5xl font-display text-6xl leading-[0.95] md:text-8xl">
-            Você não tem um problema de produto.
-            <span className="text-cream/70 italic"> Tem um problema de atenção.</span>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-            A FIG é uma agência de vídeo e tráfego pago para marcas que querem
-            sair do óbvio e virar conversa — e venda.
-          </p>
-          <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Link
-              to="/contato"
-              className="rounded-full bg-brand px-7 py-3.5 text-base font-medium text-primary-foreground transition hover:bg-brand-glow"
-            >
-              Agendar diagnóstico
-            </Link>
-            <Link
-              to="/trabalhos"
-              className="rounded-full border border-border px-7 py-3.5 text-base font-medium hover:bg-muted"
-            >
-              Ver trabalhos →
-            </Link>
+          {/* VIDEO PLACEHOLDER — substitua pelo seu vídeo */}
+          <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-border/50 bg-card/40 backdrop-blur">
+            <div className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
+              Espaço reservado para o vídeo
+            </div>
           </div>
 
           {/* stats */}

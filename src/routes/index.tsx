@@ -202,7 +202,7 @@ function Index() {
               rows={5}
               required
               placeholder="Como podemos te ajudar?"
-              className="rounded-3xl bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+              className="rounded-3xl bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
             />
             <button
               type="submit"

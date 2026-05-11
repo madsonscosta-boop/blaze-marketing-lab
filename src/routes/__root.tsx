@@ -97,7 +97,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const linkCls = "rounded-full px-4 py-2 text-background/80 transition hover:bg-background/10 hover:text-background";
   return (
-    <header className="sticky top-4 z-50 px-4">
+    <header className="fixed inset-x-0 top-4 z-50 px-4">
       <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-white/10 bg-foreground/90 px-2 py-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
         <Link to="/" className="flex items-center pl-2" onClick={() => setOpen(false)}>
           <img src={logo} alt="FIG" className="h-7 w-auto" />

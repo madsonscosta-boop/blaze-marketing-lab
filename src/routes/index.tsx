@@ -154,7 +154,7 @@ function Index() {
 
       {/* CTA — formulário */}
       <section className="bg-cream px-6 py-20">
-        <div className="mx-auto max-w-6xl rounded-3xl bg-brand px-6 py-16 text-primary-foreground md:px-16 md:py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-cream md:px-16 md:py-20">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Gostou do que viu?
             <br />

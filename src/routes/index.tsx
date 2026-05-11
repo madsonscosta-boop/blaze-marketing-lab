@@ -112,12 +112,12 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-28 md:grid-cols-2 md:gap-16">
           <div className="flex flex-col justify-center">
             <p className="font-display text-2xl leading-snug md:text-3xl">
-              Parceiro de mídia social preferido de marcas de lifestyle
-              emergentes e consolidadas.
+              Parceiro de mídia social preferido por marcas
+              emergentes e consolidadas de todos os segmentos.
             </p>
             <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
-              Somos a confiança de marcas incríveis nos setores de
-              hospitalidade, alimentação, bebidas, esporte e lazer.
+              Atendemos negócios de tecnologia, varejo, serviços, indústria,
+              saúde, educação, gastronomia e muito mais.
             </p>
           </div>
 

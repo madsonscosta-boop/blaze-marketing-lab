@@ -174,27 +174,27 @@ function Index() {
                 name="name"
                 required
                 placeholder="Nome"
-                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+                className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="tel"
                 name="phone"
                 required
                 placeholder="Telefone"
-                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+                className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="email"
                 name="email"
                 required
                 placeholder="E-mail"
-                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+                className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="text"
                 name="company"
                 placeholder="Empresa"
-                className="rounded-full bg-cream px-6 py-4 text-brand placeholder:text-brand/70 outline-none transition focus:ring-2 focus:ring-primary-foreground"
+                className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
             </div>
             <textarea

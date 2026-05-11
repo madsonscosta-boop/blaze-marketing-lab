@@ -29,7 +29,7 @@ function Index() {
           {/* pitch card */}
           <div className="mt-24 rounded-3xl bg-brand px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20">
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
-              Uma agência criativa social-first para marcas de lifestyle.
+              Uma agência criativa social-first para marcas de todos os segmentos.
             </p>
             <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
               Fortalecemos o brand awareness e crescemos comunidades nas redes sociais através de conteúdo que engaja.

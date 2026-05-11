@@ -151,7 +151,7 @@ function Footer() {
         <div>
           <p className="text-xs uppercase tracking-widest text-muted-foreground">Contato</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><a href="mailto:ola@fig.agency" className="hover:text-brand-glow">ola@fig.agency</a></li>
+            <li><a href="mailto:halo@figtheagency.com" className="hover:text-brand-glow">halo@figtheagency.com</a></li>
             <li><a href="https://instagram.com" className="hover:text-brand-glow">@fig.agency</a></li>
           </ul>
         </div>

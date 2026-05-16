@@ -20,27 +20,27 @@ function Index() {
           }}
         />
         <div className="mx-auto max-w-7xl px-6 pt-10 pb-32">
-          {/* VIDEO PLACEHOLDER — substitua pelo seu vídeo */}
+          {/* VIDEO PLACEHOLDER */}
           <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-border/50 bg-card/40 backdrop-blur">
             <div className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
-              Espaço reservado para o vídeo
+              Video placeholder
             </div>
           </div>
 
           {/* pitch card */}
           <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: '#6f64ff' }}>
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
-              Uma agência criativa social-first para marcas de todos os segmentos.
+              A social-first creative agency for brands across every industry.
             </p>
             <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
-              Fortalecemos o brand awareness e crescemos comunidades nas redes sociais através de conteúdo que engaja.
+              We strengthen brand awareness and grow communities on social media through content that engages.
             </p>
             <Link
               to="/contato"
               className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10"
             >
-              <span>Gostou do que viu?</span>
-              <span>Fale com a gente!</span>
+              <span>Like what you see?</span>
+              <span>Get in touch!</span>
             </Link>
           </div>
         </div>
@@ -55,7 +55,7 @@ function Index() {
               to="/portfolio/$slug"
               params={{ slug: img.slug }}
               className={`group overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
-              aria-label={`Ver projeto: ${img.title}`}
+              aria-label={`View project: ${img.title}`}
             >
               {img.coverVideo ? (
                 <video
@@ -85,16 +85,16 @@ function Index() {
       <section id="servicos" className="bg-cream px-6 py-20 scroll-mt-24">
         <div className="mx-auto max-w-7xl rounded-3xl bg-brand px-6 py-20 text-center md:px-16 md:py-24">
           <h2 className="font-display text-4xl text-cream md:text-5xl">
-            Nossos serviços de mídia social
+            Our social media services
           </h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              { t: "Estratégia Social", d: "Planejamento de posicionamento, pilares de conteúdo e calendário editorial alinhados ao seu público e aos objetivos de marca." },
-              { t: "Gestão de Redes Sociais", d: "Operação diária dos seus canais: publicação, comunidade, atendimento e relatórios mensais com insights acionáveis." },
-              { t: "Criação de Conteúdo", d: "Produção de fotos, reels e carrosséis que traduzem a identidade da marca em conteúdo nativo de cada plataforma." },
-              { t: "Conteúdo Criativo", d: "Conceitos originais, campanhas e formatos pensados para gerar conversa, salvar e compartilhar — não só impressões." },
-              { t: "Tráfego Pago", d: "Gestão de mídia em Meta, Google, TikTok e YouTube com modelagem de funil, criativos performáticos e otimização semanal para reduzir CAC e escalar resultados." },
-              { t: "Produção de Vídeo", d: "Roteiro, captação e edição de vídeos para anúncios, UGC e conteúdo orgânico com foco em performance e narrativa." },
+              { t: "Social Strategy", d: "Positioning, content pillars and editorial calendars aligned with your audience and brand goals." },
+              { t: "Social Media Management", d: "Day-to-day operation of your channels: publishing, community, customer care and monthly reports with actionable insights." },
+              { t: "Content Creation", d: "Photos, reels and carousels that translate your brand identity into content native to each platform." },
+              { t: "Creative Content", d: "Original concepts, campaigns and formats built to spark conversation, saves and shares — not just impressions." },
+              { t: "Paid Media", d: "Media management across Meta, Google, TikTok and YouTube with funnel modelling, high-performing creative and weekly optimisation to lower CAC and scale results." },
+              { t: "Video Production", d: "Scripting, shooting and editing of videos for ads, UGC and organic content with a focus on performance and storytelling." },
             ].map((s) => (
               <Popover key={s.t}>
                 <PopoverTrigger asChild>
@@ -134,19 +134,19 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA — formulário */}
+      {/* CTA — form */}
       <section id="contato" className="bg-cream px-6 py-20 scroll-mt-24">
         <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-cream md:px-16 md:py-20">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
-            Gostou do que viu?
+            Like what you see?
             <br />
-            Vamos fazer acontecer!
+            Let's make it happen!
           </h2>
 
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              alert("Obrigado! Em breve entraremos em contato.");
+              alert("Thank you! We'll be in touch soon.");
             }}
             className="mx-auto mt-12 grid max-w-3xl gap-5"
           >
@@ -155,27 +155,27 @@ function Index() {
                 type="text"
                 name="name"
                 required
-                placeholder="Nome"
+                placeholder="Name"
                 className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="tel"
                 name="phone"
                 required
-                placeholder="Telefone"
+                placeholder="Phone"
                 className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="email"
                 name="email"
                 required
-                placeholder="E-mail"
+                placeholder="Email"
                 className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
               <input
                 type="text"
                 name="company"
-                placeholder="Empresa"
+                placeholder="Company"
                 className="rounded-full bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
               />
             </div>
@@ -183,14 +183,14 @@ function Index() {
               name="message"
               rows={5}
               required
-              placeholder="Como podemos te ajudar?"
+              placeholder="How can we help you?"
               className="rounded-3xl bg-cream px-6 py-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:ring-2 focus:ring-primary-foreground"
             />
             <button
               type="submit"
               className="mx-auto mt-2 rounded-full border border-primary-foreground/80 px-10 py-3 text-base font-medium transition hover:bg-primary-foreground/10"
             >
-              Enviar
+              Send
             </button>
           </form>
         </div>

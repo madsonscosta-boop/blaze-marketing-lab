@@ -4,10 +4,10 @@ import { portfolioItems } from "@/lib/portfolio";
 export const Route = createFileRoute("/trabalhos")({
   head: () => ({
     meta: [
-      { title: "Trabalhos — FIG" },
-      { name: "description", content: "Portfólio de trabalhos da FIG: branding, conteúdo, social e tráfego pago." },
-      { property: "og:title", content: "Trabalhos — FIG" },
-      { property: "og:description", content: "Portfólio de trabalhos da FIG: branding, conteúdo, social e tráfego pago." },
+      { title: "Work — FIG" },
+      { name: "description", content: "FIG portfolio: branding, content, social and paid media." },
+      { property: "og:title", content: "Work — FIG" },
+      { property: "og:description", content: "FIG portfolio: branding, content, social and paid media." },
     ],
   }),
   component: TrabalhosPage,
@@ -19,12 +19,12 @@ function TrabalhosPage() {
       {/* HERO */}
       <section className="bg-cream px-6 pt-20 pb-12 md:pt-28">
         <div className="mx-auto max-w-7xl text-center">
-          <p className="text-xs uppercase tracking-[0.25em] text-brand/70">Portfólio</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-brand/70">Portfolio</p>
           <h1 className="mt-4 font-display text-5xl leading-[0.95] text-brand md:text-7xl">
-            Marcas que <span className="italic">apareceram</span>.
+            Brands that <span className="italic">showed up</span>.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base text-brand/80 md:text-lg">
-            Uma seleção dos projetos em que ajudamos marcas a construir presença, comunidade e resultado nas redes sociais.
+            A selection of projects where we helped brands build presence, community and results on social media.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ function TrabalhosPage() {
               to="/portfolio/$slug"
               params={{ slug: img.slug }}
               className={`group overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
-              aria-label={`Ver projeto: ${img.title}`}
+              aria-label={`View project: ${img.title}`}
             >
               {img.coverVideo ? (
                 <video
@@ -67,7 +67,7 @@ function TrabalhosPage() {
       {/* PROJECTS LIST */}
       <section className="bg-cream px-6 pb-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-3xl text-brand md:text-4xl">Todos os projetos</h2>
+          <h2 className="font-display text-3xl text-brand md:text-4xl">All projects</h2>
           <div className="mt-10 divide-y divide-brand/15 border-t border-brand/15">
             {portfolioItems.map((p) => (
               <Link
@@ -83,7 +83,7 @@ function TrabalhosPage() {
                   {p.category.split("\n")[0]}
                 </p>
                 <span className="text-sm text-brand transition group-hover:translate-x-1 md:col-span-2 md:text-right">
-                  Ver projeto →
+                  View project →
                 </span>
               </Link>
             ))}
@@ -95,13 +95,13 @@ function TrabalhosPage() {
       <section className="bg-brand px-6 py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-4xl leading-tight md:text-5xl">
-            Quer ser o próximo case?
+            Want to be the next case?
           </h2>
           <Link
             to="/contato"
             className="mt-10 inline-flex rounded-full border border-primary-foreground/70 px-8 py-3 text-sm transition hover:bg-primary-foreground/10"
           >
-            Fale com a gente
+            Get in touch
           </Link>
         </div>
       </section>

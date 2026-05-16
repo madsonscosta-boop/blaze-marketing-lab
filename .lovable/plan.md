@@ -1,13 +1,14 @@
-As duas fotos de baixo (Design Biennale Rotterdam e Wasteland) hoje usam `fit: "contain"`, o que faz a imagem aparecer com fundo/transparência e padding ao redor — uma "máscara" diferente das fotos de cima, que preenchem todo o card arredondado.
+## Mudanças
 
-## O que mudar
+**1. `src/routes/index.tsx`** — adicionar `id`s nas seções de destino:
+- Seção de serviços (linha 85): `id="servicos"`
+- Seção do formulário de contato (linha 138): `id="contato"`
 
-Em `src/lib/portfolio.ts`, nos itens `esporte` (Biennale) e `estadio` (Wasteland):
+**2. `src/routes/__root.tsx`** — atualizar links do menu:
+- "Trabalhos" → `to="/" hash="servicos"` (vai para a seção Serviços na home)
+- "Falar" / "Contato" → `to="/" hash="contato"` (vai para o formulário de contato na home)
+- Mesmas alterações no footer (Trabalhos e Contato).
 
-- Remover `fit: "contain"` para que as imagens passem a usar `object-cover` (igual às de cima), preenchendo o card arredondado inteiro sem padding nem fundo visível.
+## Observação
 
-Mantenho o tamanho atual delas no grid (`col-span-2`, aspect `16/10`) para não quebrar o mosaico — só a "máscara"/recorte da imagem muda, ficando consistente com as de cima.
-
-## Resultado esperado
-
-As duas fotos de baixo vão aparecer recortadas dentro do mesmo formato arredondado das de cima, sem moldura/padding ao redor.
+Confirmando: você disse "a aba **trabalho** ir pra seção **serviços**" — vou fazer literalmente isso (Trabalhos abre a seção Serviços). Se foi engano e quer que Trabalhos continue indo para a seção Portfólio, é só me avisar.

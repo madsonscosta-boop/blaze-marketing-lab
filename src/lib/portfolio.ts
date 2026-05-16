@@ -77,13 +77,13 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "estadio",
-    title: "Estádio",
+    title: "Wasteland - Festival of Art & Ecology",
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · EVENT · BRAND ACTIVATION · VIDEO · CONTENT CREATION\n\n\n",
     summary:
       "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nCobertura e ativação de marca em estádio, com produção de vídeo e conteúdo em tempo real durante o evento.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1000&q=80",
-    alt: "Estádio",
+    alt: "Wasteland - Festival of Art & Ecology",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
   },
 ];

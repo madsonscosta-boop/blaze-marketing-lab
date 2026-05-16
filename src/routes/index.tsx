@@ -83,7 +83,7 @@ function Index() {
 
       {/* SERVICES */}
       <section id="servicos" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-brand px-6 py-20 text-center md:px-16 md:py-24">
+        <div className="mx-auto max-w-7xl rounded-3xl px-6 py-20 text-center md:px-16 md:py-24" style={{ backgroundColor: '#6f64ff' }}>
           <h2 className="font-display text-4xl text-cream md:text-5xl">
             Our social media services
           </h2>

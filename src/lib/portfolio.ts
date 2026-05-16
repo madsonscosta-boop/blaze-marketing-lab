@@ -23,14 +23,14 @@ export const portfolioItems: PortfolioItem[] = [
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
   },
   {
-    slug: "evento-sazonal",
-    title: "Evento sazonal",
+    slug: "hanno",
+    title: "Hanno",
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · CAMPAIGN · VIDEO · META ADS · SOCIAL\n\n\n",
     summary:
       "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nCampanha integrada para um evento sazonal, com captação de vídeo, conteúdo social e tráfego pago trabalhando em conjunto.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80",
-    alt: "Evento sazonal",
+    alt: "Hanno",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
   },
   {

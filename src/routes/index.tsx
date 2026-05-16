@@ -138,7 +138,7 @@ function Index() {
       <section className="border-t border-border/40 bg-brand text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <p className="font-display text-4xl leading-tight md:text-6xl">
-            "Working with FIG has had a hugely positive impact on my business. My Instagram grew from 400 to 1,395 followers, all three workshops sold out, and they even got me comfortable on camera. All this growth led to a TV invitation! My pages look far more professional. The support is dedicated and tailored to your business. Highly recommend!"
+            "Working with FIG made a huge impact. My Instagram grew from 400 to 1,395 followers, workshops sold out, and I got comfortable on camera — even landing a TV invitation. Professional, dedicated support. Highly recommend!"
           </p>
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-cream" />

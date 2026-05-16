@@ -15,9 +15,9 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "marca-alimentacao",
     title: "Marca de alimentação",
     client: "Cliente em breve",
-    category: "Branding & Conteúdo",
+    category: "TAGS: STRATEGY · BRANDING · CONTENT CREATION · PHOTOGRAPHY · INSTAGRAM\n\n\n",
     summary:
-      "Reposicionamento de marca e produção de conteúdo social-first para uma marca de alimentação.",
+      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nEstratégia de marca e produção de conteúdo social-first desenvolvidas para conectar o produto ao dia a dia do público.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80",
     alt: "Marca de alimentação",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
@@ -26,9 +26,9 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "evento-sazonal",
     title: "Evento sazonal",
     client: "Cliente em breve",
-    category: "Campanha & Vídeo",
+    category: "TAGS: STRATEGY · CAMPAIGN · VIDEO · META ADS · SOCIAL\n\n\n",
     summary:
-      "Campanha integrada para evento sazonal com captação de vídeo, social e tráfego pago.",
+      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nCampanha integrada para um evento sazonal, com captação de vídeo, conteúdo social e tráfego pago trabalhando em conjunto.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80",
     alt: "Evento sazonal",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",

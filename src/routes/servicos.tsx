@@ -3,8 +3,8 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — FIG" },
-      { name: "description", content: "Vídeo, tráfego pago e estratégia de conteúdo." },
+      { title: "Services — FIG" },
+      { name: "description", content: "Video, paid media and content strategy." },
     ],
   }),
   component: ServicosPage,
@@ -12,28 +12,28 @@ export const Route = createFileRoute("/servicos")({
 
 const services = [
   {
-    t: "Vídeo",
-    d: "Da ideia ao corte final. Conteúdo orgânico, UGC e anúncios feitos para performar nos primeiros 3 segundos.",
-    items: ["Direção criativa", "Produção 4K", "Edição + motion", "UGC em escala"],
+    t: "Video",
+    d: "From idea to final cut. Organic content, UGC and ads built to perform in the first 3 seconds.",
+    items: ["Creative direction", "4K production", "Editing + motion", "UGC at scale"],
   },
   {
-    t: "Tráfego pago",
-    d: "Gestão diária com modelagem de funil, testes criativos semanais e dashboards transparentes.",
-    items: ["Meta Ads", "Google Ads", "TikTok / YouTube", "Relatórios semanais"],
+    t: "Paid Media",
+    d: "Daily management with funnel modelling, weekly creative testing and transparent dashboards.",
+    items: ["Meta Ads", "Google Ads", "TikTok / YouTube", "Weekly reports"],
   },
   {
-    t: "Estratégia de marca",
-    d: "Posicionamento, oferta e copywriting. A criatividade trabalha melhor com uma boa pergunta no começo.",
-    items: ["Pesquisa de audiência", "Posicionamento", "Oferta + copy", "Funil de conversão"],
+    t: "Brand Strategy",
+    d: "Positioning, offer and copywriting. Creativity works better when it starts with a good question.",
+    items: ["Audience research", "Positioning", "Offer + copy", "Conversion funnel"],
   },
 ];
 
 function ServicosPage() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">Serviços</p>
+      <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">Services</p>
       <h1 className="mt-3 max-w-3xl font-display text-6xl leading-[0.95] md:text-7xl">
-        Tudo que sua marca precisa para <span className="italic">virar conversa</span>.
+        Everything your brand needs to <span className="italic">become the conversation</span>.
       </h1>
 
       <div className="mt-20 space-y-px overflow-hidden rounded-3xl border border-border">

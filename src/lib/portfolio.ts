@@ -27,7 +27,7 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "hanno",
     title: "Hanno",
     client: "Cliente em breve",
-    category: "TAGS: STRATEGY · CAMPAIGN · VIDEO · META ADS · SOCIAL\n\n\n",
+    category: "TAGS: BRANDING · ONLINE PRESENCE · PAID ADS · SOCIAL STRATEGY\n\n\n",
     summary:
       "The brief:\n\nHanno has been helping people in the Netherlands navigate the mortgage process for over 7 years. We came on board to help them build a stronger digital presence and reach new audiences.\n\nOur approach:\n\nWe're working with Hanno across two fronts: building a brand identity that feels trustworthy and clear, and running paid ads across two platforms to start generating visibility and leads. Everything is designed to grow with them as the business scales.\n\nThe result:\n\nThis is an ongoing partnership - results coming soon.",
     src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80",

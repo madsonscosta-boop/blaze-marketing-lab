@@ -188,7 +188,7 @@ function Index() {
             />
             <button
               type="submit"
-              className="mx-auto mt-2 rounded-full border border-primary-foreground/80 px-10 py-3 text-base font-medium transition hover:bg-primary-foreground/10"
+              className="mx-auto mt-4 rounded-full bg-[#6f64ff] px-12 py-4 text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/30 transition hover:bg-[#5a50e6] hover:shadow-xl hover:shadow-[#6f64ff]/40 hover:scale-105"
             >
               Send
             </button>

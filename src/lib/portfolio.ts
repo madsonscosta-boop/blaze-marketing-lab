@@ -81,7 +81,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · EVENT · BRAND ACTIVATION · VIDEO · CONTENT CREATION\n\n\n",
     summary:
-      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nCobertura e ativação de marca em estádio, com produção de vídeo e conteúdo em tempo real durante o evento.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
+      "The brief:\n\nWasteland is a Rotterdam collective working at the intersection of art and ecology — exhibitions, performances, field trips, workshops. They needed someone to own their communications and make a complex, fragmented programme feel alive and accessible online.\n\nOur approach:\n\nBrought on as communications manager across Instagram, website, and external communications. Coordinated content from 20+ artists and collaborators across a full season, working with a graphic designer on visual templates and consistency.\n\nThe result:\n\nA season of programming communicated clearly, with a growing and engaged community. The Instagram became a genuine reflection of the organisation — not just an announcement board.",
     src: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1000&q=80",
     alt: "Wasteland - Festival of Art & Ecology",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",

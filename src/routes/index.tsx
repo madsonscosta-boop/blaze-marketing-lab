@@ -82,7 +82,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-cream px-6 py-20">
+      <section id="servicos" className="bg-cream px-6 py-20 scroll-mt-24">
         <div className="mx-auto max-w-7xl rounded-3xl bg-brand px-6 py-20 text-center md:px-16 md:py-24">
           <h2 className="font-display text-4xl text-cream md:text-5xl">
             Nossos serviços de mídia social
@@ -135,7 +135,7 @@ function Index() {
       </section>
 
       {/* CTA — formulário */}
-      <section className="bg-cream px-6 py-20">
+      <section id="contato" className="bg-cream px-6 py-20 scroll-mt-24">
         <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-cream md:px-16 md:py-20">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Gostou do que viu?

@@ -54,7 +54,7 @@ function Index() {
               key={img.slug}
               to="/portfolio/$slug"
               params={{ slug: img.slug }}
-              className={`group overflow-hidden rounded-2xl bg-background ${img.cls}`}
+              className={`group overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
               aria-label={`Ver projeto: ${img.title}`}
             >
               {img.coverVideo ? (

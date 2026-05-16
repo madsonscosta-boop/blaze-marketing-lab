@@ -48,13 +48,13 @@ function PortfolioDetail() {
         <Link to="/" className="text-sm text-brand/70 hover:text-brand">
           ← Voltar
         </Link>
-        <p className="mt-6 font-display text-sm uppercase tracking-widest text-brand/60">
+        <p className="mt-6 font-display text-sm uppercase tracking-widest text-brand/60 whitespace-pre-line">
           {item.category}
         </p>
         <h1 className="mt-3 font-display text-5xl leading-tight text-brand md:text-6xl">
           {item.title}
         </h1>
-        <p className="mt-4 max-w-2xl whitespace-pre-line text-lg text-brand/80">{item.summary}</p>
+        <p className="mt-4 max-w-2xl whitespace-pre-line text-lg text-brand/80 font-sans">{item.summary}</p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">

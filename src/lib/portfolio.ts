@@ -11,6 +11,7 @@ export type PortfolioItem = {
   images?: string[];
   layout?: "video-image-video";
   centerImage?: string;
+  coverVideo?: string;
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -21,9 +22,9 @@ export const portfolioItems: PortfolioItem[] = [
     category: "TAGS: SOCIAL STRATEGY · CONTENT · COMMUNITY GROWTH · WORKSHOP PROMOTION\n\n ",
     summary:
       "The brief:\n\nOficina Amor is a restoration and upholstery studio based in Portugal. They do bespoke restoration work and run hands-on workshops. The goal was to build their online presence, get them in front of the right people, and fill the workshops.\n\nOur approach:\n\nWe built a content strategy around the craft itself: showing the process, the before and after, the detail of the work. Content that makes people stop, appreciate what restoration and upholstery really involves, and want to be part of it. Part of the production was shot on location in Portugal.\n\nThe result:\n\nThis is an ongoing partnership.\nIn 3 months, the account grew by over 1,000 followers. The workshops have been fully booked ever since.",
-    src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80",
+    src: "/portfolio/oficina-amor/cover.jpg",
     alt: "Oficina Amor",
-    cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
+    cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
     layout: "video-image-video",
     centerImage: "/portfolio/marca-alimentacao/image-1.jpg",
     videos: [
@@ -38,9 +39,9 @@ export const portfolioItems: PortfolioItem[] = [
     category: "TAGS: BRANDING · ONLINE PRESENCE · PAID ADS · SOCIAL STRATEGY\n\n\n",
     summary:
       "The brief:\n\nHanno has been helping people in the Netherlands navigate the mortgage process for over 7 years. We came on board to help them build a stronger digital presence and reach new audiences.\n\nOur approach:\n\nWe're working with Hanno across two fronts: building a brand identity that feels trustworthy and clear, and running paid ads across two platforms to start generating visibility and leads. Everything is designed to grow with them as the business scales.\n\nThe result:\n\nThis is an ongoing partnership - results coming soon.",
-    src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80",
+    src: "/portfolio/hanno/cover.png",
     alt: "Hanno",
-    cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
+    cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
     images: [
       "/portfolio/hanno/image-1.png",
       "/portfolio/hanno/image-2.png",
@@ -53,9 +54,10 @@ export const portfolioItems: PortfolioItem[] = [
     category: "TAGS: STRATEGY · CONTENT CREATION · PHOTOGRAPHY · META ADS · INSTAGRAM · FACEBOOK · TIKTOK\n\n\n",
     summary:
       "The brief:\n\nOri Mart is an Asian convenience store in the heart of Rotterdam. A daily stop for locals and a discovery moment for tourists passing through. When we approached them, their digital presence didn't reflect the energy of the store.\n\nOur approach:\n\nWe built everything from scratch: content strategy, monthly on-location shoots, paid campaigns across Meta, and an organic presence across Instagram, Facebook and TikTok. The content is made to feel native to each platform, not polished for the sake of it, but real enough to stop the scroll.\n\nThe result:\n\nThis is an ongoing partnership.\nIn just 2 months, Instagram grew from 2,558 to 3,611 followers (+41%). Facebook was launched from zero and reached 272K+ views. A single reel hit 97K views with 908 shares, the strongest piece of content produced by FIG for the account to date. Meta ads delivered a €0.05 cost-per-click with €331 in total ad spend for the month.\n\nApril was their best digital month ever.",
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80",
+    src: "/portfolio/ori-mart/cover.mp4",
     alt: "Ori Mart",
-    cls: "md:col-span-2 md:row-span-1 aspect-[16/9]",
+    cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
+    coverVideo: "/portfolio/ori-mart/cover.mp4",
     videos: [
       "/portfolio/ori-mart/video-1.mp4",
       "/portfolio/ori-mart/video-2.mp4",

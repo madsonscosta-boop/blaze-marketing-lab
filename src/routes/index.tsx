@@ -57,12 +57,25 @@ function Index() {
               className={`group overflow-hidden rounded-2xl bg-background ${img.cls}`}
               aria-label={`Ver projeto: ${img.title}`}
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-              />
+              {img.coverVideo ? (
+                <video
+                  src={img.coverVideo}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  playsInline
+                  muted
+                  loop
+                  autoPlay
+                  preload="metadata"
+                  aria-label={img.alt}
+                />
+              ) : (
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              )}
             </Link>
           ))}
         </div>

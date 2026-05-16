@@ -133,35 +133,35 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border/40 bg-background">
+    <footer className="border-t border-white/10 bg-[#0e1020] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <img src={logo} alt="FIG" className="h-10 w-auto" />
           </div>
-          <p className="mt-4 max-w-sm text-sm text-muted-foreground">
+          <p className="mt-4 max-w-sm text-sm text-white/70">
             Fig the out.
           </p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-muted-foreground">Navigate</p>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/" hash="servicos" className="hover:text-brand-glow">Services</Link></li>
-            <li><Link to="/" hash="portfolio" className="hover:text-brand-glow">Work</Link></li>
-            <li><Link to="/sobre" className="hover:text-brand-glow">About</Link></li>
-            <li><Link to="/" hash="contato" className="hover:text-brand-glow">Contact</Link></li>
+          <p className="text-xs uppercase tracking-widest text-white/60">Navigate</p>
+          <ul className="mt-4 space-y-2 text-sm text-white/80">
+            <li><Link to="/" hash="servicos" className="transition hover:text-brand-glow">Services</Link></li>
+            <li><Link to="/" hash="portfolio" className="transition hover:text-brand-glow">Work</Link></li>
+            <li><Link to="/sobre" className="transition hover:text-brand-glow">About</Link></li>
+            <li><Link to="/" hash="contato" className="transition hover:text-brand-glow">Contact</Link></li>
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-muted-foreground">Contact</p>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><a href="mailto:ola@fig.agency" className="hover:text-brand-glow">ola@fig.agency</a></li>
-            <li><a href="https://instagram.com" className="hover:text-brand-glow">@fig.agency</a></li>
+          <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
+          <ul className="mt-4 space-y-2 text-sm text-white/80">
+            <li><a href="mailto:ola@fig.agency" className="transition hover:text-brand-glow">ola@fig.agency</a></li>
+            <li><a href="https://instagram.com" className="transition hover:text-brand-glow">@fig.agency</a></li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-border/40">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-muted-foreground">
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-white/60">
           <span>© {new Date().getFullYear()} FIG. All rights reserved.</span>
           <span>Made with care, in São Paulo.</span>
         </div>

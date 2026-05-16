@@ -7,6 +7,7 @@ export type PortfolioItem = {
   src: string;
   alt: string;
   cls: string;
+  videos?: string[];
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -42,6 +43,11 @@ export const portfolioItems: PortfolioItem[] = [
     src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80",
     alt: "Ori Mart",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/9]",
+    videos: [
+      "/portfolio/ori-mart/video-1.mp4",
+      "/portfolio/ori-mart/video-2.mp4",
+      "/portfolio/ori-mart/video-3.mp4",
+    ],
   },
   {
     slug: "esporte",

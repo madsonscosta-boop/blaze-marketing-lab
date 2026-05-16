@@ -59,26 +59,28 @@ function PortfolioDetail() {
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {[0, 1, 2].map((i) => (
+          {(item.videos ?? [null, null, null]).map((src, i) => (
             <div
               key={i}
               className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background"
             >
-              <video
-                className="h-full w-full object-cover"
-                playsInline
-                muted
-                loop
-                autoPlay
-                preload="metadata"
-                aria-label={`${item.title} — vídeo ${i + 1}`}
-              >
-                {/* Substitua o src abaixo pelo arquivo de vídeo vertical correspondente */}
-                <source src="" type="video/mp4" />
-              </video>
-              <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-brand/5 text-xs uppercase tracking-widest text-brand/50">
-                Vídeo {i + 1}
-              </div>
+              {src ? (
+                <video
+                  className="h-full w-full object-cover"
+                  playsInline
+                  muted
+                  loop
+                  autoPlay
+                  preload="metadata"
+                  aria-label={`${item.title} — vídeo ${i + 1}`}
+                >
+                  <source src={src} type="video/mp4" />
+                </video>
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center bg-brand/5 text-xs uppercase tracking-widest text-brand/50">
+                  Vídeo {i + 1}
+                </div>
+              )}
             </div>
           ))}
         </div>

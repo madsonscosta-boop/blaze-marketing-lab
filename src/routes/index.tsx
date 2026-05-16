@@ -28,7 +28,7 @@ function Index() {
           </div>
 
           {/* pitch card */}
-          <div className="mt-24 rounded-3xl bg-brand px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20">
+          <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: '#6f64ff' }}>
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
               Uma agência criativa social-first para marcas de todos os segmentos.
             </p>

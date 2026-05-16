@@ -73,7 +73,7 @@ function Index() {
                   src={img.src}
                   alt={img.alt}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  className={`h-full w-full ${img.fit === "contain" ? "object-contain p-6" : "object-cover"} transition duration-500 group-hover:scale-105`}
                 />
               )}
             </Link>

@@ -37,9 +37,9 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "ori-mart",
     title: "Ori Mart",
     client: "Cliente em breve",
-    category: "Conteúdo & Social",
+    category: "Produção contínua de conteúdo para um restaurante, com foco em reels e identidade visual.",
     summary:
-      "Produção contínua de conteúdo para um restaurante, com foco em reels e identidade visual.",
+      "A estratégia foi focada em atrair novos clientes através de vídeos dinâmicos e uma estética de marca consistente.",
     src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80",
     alt: "Ori Mart",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/9]",

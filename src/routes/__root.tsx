@@ -118,7 +118,7 @@ function Header() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 -z-10 bg-foreground/95 backdrop-blur-xl animate-fade-in">
+        <div className="fixed inset-0 z-40 bg-foreground/95 backdrop-blur-xl animate-fade-in">
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
             <Link to="/servicos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Serviços</Link>
             <Link to="/trabalhos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Trabalhos</Link>

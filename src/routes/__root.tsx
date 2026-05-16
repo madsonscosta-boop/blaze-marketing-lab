@@ -118,12 +118,12 @@ function Header() {
       </div>
 
       {open && (
-        <div className="mx-auto mt-3 w-fit rounded-3xl border border-white/10 bg-foreground/90 p-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
-          <nav className="flex flex-col text-sm">
-            <Link to="/servicos" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Serviços</Link>
-            <Link to="/trabalhos" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Trabalhos</Link>
-            <Link to="/sobre" className={linkCls} activeProps={{ className: "bg-background/10 text-background" }} onClick={() => setOpen(false)}>Sobre</Link>
-            <Link to="/contato" className="mt-1 rounded-full bg-brand px-4 py-2 text-center text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Falar</Link>
+        <div className="fixed inset-0 z-40 bg-foreground/95 backdrop-blur-xl animate-fade-in">
+          <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
+            <Link to="/servicos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Serviços</Link>
+            <Link to="/trabalhos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Trabalhos</Link>
+            <Link to="/sobre" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Sobre</Link>
+            <Link to="/contato" className="mt-4 rounded-full bg-brand px-8 py-4 text-lg text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Falar</Link>
           </nav>
         </div>
       )}

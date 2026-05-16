@@ -53,9 +53,9 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "esporte",
     title: "Esporte",
     client: "Cliente em breve",
-    category: "Vídeo & Performance",
+    category: "TAGS: STRATEGY · VIDEO · PERFORMANCE · META ADS · INSTAGRAM · TIKTOK\n\n\n",
     summary:
-      "Estratégia de conteúdo e mídia para uma marca esportiva, conectando performance e narrativa.",
+      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nEstratégia de conteúdo e mídia para uma marca esportiva, conectando performance e narrativa em todos os canais.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80",
     alt: "Esporte",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
@@ -64,9 +64,9 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "estadio",
     title: "Estádio",
     client: "Cliente em breve",
-    category: "Evento & Ativação",
+    category: "TAGS: STRATEGY · EVENT · BRAND ACTIVATION · VIDEO · CONTENT CREATION\n\n\n",
     summary:
-      "Cobertura e ativação de marca em estádio, com produção de vídeo e conteúdo em tempo real.",
+      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nCobertura e ativação de marca em estádio, com produção de vídeo e conteúdo em tempo real durante o evento.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1000&q=80",
     alt: "Estádio",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",

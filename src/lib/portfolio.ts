@@ -70,7 +70,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · VIDEO · PERFORMANCE · META ADS · INSTAGRAM · TIKTOK\n\n\n",
     summary:
-      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nEstratégia de conteúdo e mídia para uma marca esportiva, conectando performance e narrativa em todos os canais.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
+      "The brief:\n\nAn inaugural design festival across 12 locations in Rotterdam, featuring over 100 participating designers. No existing audience, no playbook. Built from zero.\n\nOur approach:\n\nBrought on as communications manager to build the full digital presence from scratch. We developed the Instagram strategy, managed day-to-day content, and coordinated visual output across 100+ designers and partners — working with a graphic designer to keep a sprawling programme feeling like one coherent event.\n\nThe result:\n\n0 to 6,000 followers for an account that didn't exist before launch. A community built around an inaugural edition strong enough to return for a second.",
     src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80",
     alt: "Design Biennale Rotterdam",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",

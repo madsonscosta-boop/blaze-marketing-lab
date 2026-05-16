@@ -66,13 +66,13 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "esporte",
-    title: "Esporte",
+    title: "Design Biennale Rotterdam",
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · VIDEO · PERFORMANCE · META ADS · INSTAGRAM · TIKTOK\n\n\n",
     summary:
       "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nEstratégia de conteúdo e mídia para uma marca esportiva, conectando performance e narrativa em todos os canais.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
     src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80",
-    alt: "Esporte",
+    alt: "Design Biennale Rotterdam",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
   },
   {

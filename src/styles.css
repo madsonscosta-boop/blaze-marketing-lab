@@ -69,7 +69,7 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(0.973 0.0125 6);
-  --foreground: oklch(0.97 0.01 320);
+  --foreground: oklch(0.18 0.05 280);
   --brand: oklch(0.45 0.31 270);
   --brand-glow: oklch(0.62 0.27 270);
   --cream: oklch(0.93 0.025 350);

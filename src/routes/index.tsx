@@ -136,7 +136,7 @@ function Index() {
 
       {/* CTA — form */}
       <section id="contato" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-cream md:px-16 md:py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-[#6f64ff] md:px-16 md:py-20">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Like what you see?
             <br />

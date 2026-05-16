@@ -107,33 +107,6 @@ function Index() {
         </div>
       </section>
 
-      {/* TRUSTED BRANDS */}
-      <section className="bg-cream text-accent-foreground">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-28 md:grid-cols-2 md:gap-16">
-          <div className="flex flex-col justify-center">
-            <p className="font-display text-2xl leading-snug md:text-3xl">
-              Parceiro de mídia social preferido por marcas
-              emergentes e consolidadas de todos os segmentos.
-            </p>
-            <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
-              Atendemos negócios de tecnologia, varejo, serviços, indústria,
-              saúde, educação, gastronomia e muito mais.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 md:gap-5">
-            {["Caravan", "YUUM", "Jamie Oliver", "Paul Smith", "Rocketo", "Josie's"].map((brand) => (
-              <div
-                key={brand}
-                className="flex aspect-[4/3] items-center justify-center rounded-2xl bg-background text-cream shadow-sm transition hover:shadow-md"
-              >
-                <span className="font-display text-2xl tracking-wide">{brand}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* QUOTE / SHOWCASE */}
       <section className="border-t border-border/40 bg-brand text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">

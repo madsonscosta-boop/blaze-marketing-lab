@@ -58,7 +58,23 @@ function PortfolioDetail() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
-        {item.images && item.images.length > 0 ? (
+        {item.layout === "video-image-video" && item.videos && item.centerImage ? (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 items-center">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background">
+              <video className="h-full w-full object-cover" playsInline muted loop autoPlay preload="metadata">
+                <source src={item.videos[0]} type="video/mp4" />
+              </video>
+            </div>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-background">
+              <img src={item.centerImage} alt={item.title} className="h-full w-full object-cover" loading="lazy" />
+            </div>
+            <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background">
+              <video className="h-full w-full object-cover" playsInline muted loop autoPlay preload="metadata">
+                <source src={item.videos[1]} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        ) : item.images && item.images.length > 0 ? (
           <div
             className={`grid grid-cols-1 gap-4 ${
               item.images.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"

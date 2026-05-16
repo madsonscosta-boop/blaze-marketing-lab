@@ -39,7 +39,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Cliente em breve",
     category: "Produção contínua de conteúdo para um restaurante, com foco em reels e identidade visual.",
     summary:
-      "A estratégia foi focada em atrair novos clientes através de vídeos dinâmicos e uma estética de marca consistente.",
+      "The brief:\n\nOri Mart is an Asian convenience store in the heart of Rotterdam. A daily stop for locals and a discovery moment for tourists passing through. When we approached them, their digital presence didn't reflect the energy of the store.\n\nOur approach:\n\nWe built everything from scratch: content strategy, monthly on-location shoots, paid campaigns across Meta, and an organic presence across Instagram, Facebook and TikTok. The content is made to feel native to each platform, not polished for the sake of it, but real enough to stop the scroll.\n\nThe result:\n\nThis is an ongoing partnership.\nIn just 2 months, Instagram grew from 2,558 to 3,611 followers (+41%). Facebook was launched from zero and reached 272K+ views. A single reel hit 97K views with 908 shares, the strongest piece of content produced by FIG for the account to date. Meta ads delivered a €0.05 cost-per-click with €331 in total ad spend for the month.\n\nApril was their best digital month ever.",
     src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80",
     alt: "Ori Mart",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/9]",

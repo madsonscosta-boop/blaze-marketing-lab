@@ -33,14 +33,14 @@ export const portfolioItems: PortfolioItem[] = [
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
   },
   {
-    slug: "gastronomia",
-    title: "Gastronomia",
+    slug: "ori-mart",
+    title: "Ori Mart",
     client: "Cliente em breve",
     category: "Conteúdo & Social",
     summary:
       "Produção contínua de conteúdo para um restaurante, com foco em reels e identidade visual.",
     src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80",
-    alt: "Gastronomia",
+    alt: "Ori Mart",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/9]",
   },
   {

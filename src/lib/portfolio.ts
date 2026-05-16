@@ -75,7 +75,6 @@ export const portfolioItems: PortfolioItem[] = [
     src: "/portfolio/biennale/cover.jpg",
     alt: "Design Biennale Rotterdam",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
-    fit: "contain",
   },
   {
     slug: "estadio",
@@ -87,7 +86,6 @@ export const portfolioItems: PortfolioItem[] = [
     src: "/portfolio/wasteland/cover.png",
     alt: "Wasteland - Out of Sight",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
-    fit: "contain",
   },
 ];
 

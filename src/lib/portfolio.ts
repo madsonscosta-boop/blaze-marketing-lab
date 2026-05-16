@@ -11,6 +11,7 @@ export type PortfolioItem = {
   images?: string[];
   layout?: "video-image-video";
   centerImage?: string;
+  coverVideo?: string;
 };
 
 export const portfolioItems: PortfolioItem[] = [

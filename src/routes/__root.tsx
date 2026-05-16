@@ -121,9 +121,9 @@ function Header() {
         <div className="fixed inset-0 z-40 bg-foreground/95 backdrop-blur-xl animate-fade-in">
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
             <Link to="/servicos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Serviços</Link>
-            <Link to="/" hash="portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Trabalhos</Link>
+            <Link to="/" hash="servicos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Trabalhos</Link>
             <Link to="/sobre" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Sobre</Link>
-            <Link to="/contato" className="mt-4 rounded-full bg-brand px-8 py-4 text-lg text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Falar</Link>
+            <Link to="/" hash="contato" className="mt-4 rounded-full bg-brand px-8 py-4 text-lg text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Falar</Link>
           </nav>
         </div>
       )}
@@ -147,9 +147,9 @@ function Footer() {
           <p className="text-xs uppercase tracking-widest text-muted-foreground">Navegar</p>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link to="/servicos" className="hover:text-brand-glow">Serviços</Link></li>
-            <li><Link to="/" hash="portfolio" className="hover:text-brand-glow">Trabalhos</Link></li>
+            <li><Link to="/" hash="servicos" className="hover:text-brand-glow">Trabalhos</Link></li>
             <li><Link to="/sobre" className="hover:text-brand-glow">Sobre</Link></li>
-            <li><Link to="/contato" className="hover:text-brand-glow">Contato</Link></li>
+            <li><Link to="/" hash="contato" className="hover:text-brand-glow">Contato</Link></li>
           </ul>
         </div>
         <div>

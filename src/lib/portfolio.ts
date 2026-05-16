@@ -8,6 +8,7 @@ export type PortfolioItem = {
   alt: string;
   cls: string;
   videos?: string[];
+  images?: string[];
 };
 
 export const portfolioItems: PortfolioItem[] = [

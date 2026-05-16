@@ -43,18 +43,18 @@ function PortfolioDetail() {
   const others = portfolioItems.filter((p) => p.slug !== item.slug).slice(0, 4);
 
   return (
-    <article className="bg-cream">
+    <article className="bg-[#fff4f7]">
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
-        <Link to="/" className="text-sm text-brand/70 hover:text-brand">
+        <Link to="/" className="text-sm text-[#0E1020]/70 hover:text-[#0E1020]">
           ← Back
         </Link>
-        <p className="mt-6 font-display text-sm uppercase tracking-widest text-brand/60 whitespace-pre-line">
+        <p className="mt-6 font-display text-sm uppercase tracking-widest text-[#0E1020]/60 whitespace-pre-line">
           {item.category}
         </p>
-        <h1 className="mt-3 font-display text-5xl leading-tight text-brand md:text-6xl">
+        <h1 className="mt-3 font-display text-5xl leading-tight text-[#0E1020] md:text-6xl">
           {item.title}
         </h1>
-        <p className="mt-4 whitespace-pre-line text-lg text-brand/80 font-sans">{item.summary}</p>
+        <p className="mt-4 whitespace-pre-line text-lg text-[#0E1020]/80 font-sans">{item.summary}</p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">

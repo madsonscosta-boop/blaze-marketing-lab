@@ -58,32 +58,54 @@ function PortfolioDetail() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {(item.videos ?? [null, null, null]).map((src: string | null, i: number) => (
-            <div
-              key={i}
-              className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background"
-            >
-              {src ? (
-                <video
+        {item.images && item.images.length > 0 ? (
+          <div
+            className={`grid grid-cols-1 gap-4 ${
+              item.images.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"
+            }`}
+          >
+            {item.images.map((src: string, i: number) => (
+              <div
+                key={i}
+                className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-background"
+              >
+                <img
+                  src={src}
+                  alt={`${item.title} — imagem ${i + 1}`}
                   className="h-full w-full object-cover"
-                  playsInline
-                  muted
-                  loop
-                  autoPlay
-                  preload="metadata"
-                  aria-label={`${item.title} — vídeo ${i + 1}`}
-                >
-                  <source src={src} type="video/mp4" />
-                </video>
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center bg-brand/5 text-xs uppercase tracking-widest text-brand/50">
-                  Vídeo {i + 1}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {(item.videos ?? [null, null, null]).map((src: string | null, i: number) => (
+              <div
+                key={i}
+                className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background"
+              >
+                {src ? (
+                  <video
+                    className="h-full w-full object-cover"
+                    playsInline
+                    muted
+                    loop
+                    autoPlay
+                    preload="metadata"
+                    aria-label={`${item.title} — vídeo ${i + 1}`}
+                  >
+                    <source src={src} type="video/mp4" />
+                  </video>
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center bg-brand/5 text-xs uppercase tracking-widest text-brand/50">
+                    Vídeo {i + 1}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">

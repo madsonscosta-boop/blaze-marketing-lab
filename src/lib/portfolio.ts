@@ -8,6 +8,7 @@ export type PortfolioItem = {
   alt: string;
   cls: string;
   videos?: string[];
+  images?: string[];
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -32,6 +33,10 @@ export const portfolioItems: PortfolioItem[] = [
     src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=900&q=80",
     alt: "Hanno",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
+    images: [
+      "/portfolio/hanno/image-1.png",
+      "/portfolio/hanno/image-2.png",
+    ],
   },
   {
     slug: "ori-mart",

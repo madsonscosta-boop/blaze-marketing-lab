@@ -99,10 +99,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function Header() {
   const [open, setOpen] = useState(false);
-  const linkCls = "rounded-full px-4 py-2 text-background/80 transition hover:bg-background/10 hover:text-background";
+  const linkCls = "rounded-full px-4 py-2 text-[#0e1020]/80 transition hover:bg-[#0e1020]/10 hover:text-[#0e1020]";
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
-      <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-white/10 bg-foreground/90 px-2 py-2 text-background shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] backdrop-blur-xl">
+      <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-[#0e1020]/10 bg-[#efdfe7] px-2 py-2 text-[#0e1020] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
         <Link to="/" className="flex items-center pl-2" onClick={() => setOpen(false)}>
           <img src={logo} alt="FIG" className="h-7 w-auto" />
         </Link>
@@ -111,7 +111,7 @@ function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="flex h-9 w-9 items-center justify-center rounded-full text-background/80 transition hover:bg-background/10 hover:text-background"
+          className="flex h-9 w-9 items-center justify-center rounded-full text-[#0e1020]/80 transition hover:bg-[#0e1020]/10 hover:text-[#0e1020]"
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>

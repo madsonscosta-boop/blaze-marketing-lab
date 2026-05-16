@@ -9,6 +9,8 @@ export type PortfolioItem = {
   cls: string;
   videos?: string[];
   images?: string[];
+  layout?: "video-image-video";
+  centerImage?: string;
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -22,6 +24,12 @@ export const portfolioItems: PortfolioItem[] = [
     src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80",
     alt: "Marca de alimentação",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",
+    layout: "video-image-video",
+    centerImage: "/portfolio/marca-alimentacao/image-1.jpg",
+    videos: [
+      "/portfolio/marca-alimentacao/video-1.mp4",
+      "/portfolio/marca-alimentacao/video-2.mp4",
+    ],
   },
   {
     slug: "hanno",

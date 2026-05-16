@@ -143,7 +143,7 @@ function Index() {
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-cream" />
             <div>
-              <p className="font-medium">Marina Lopes</p>
+              <p className="font-medium">Oficina Amor</p>
               <p className="text-sm text-primary-foreground/70">Head of Growth, Pluma DTC</p>
             </div>
           </div>

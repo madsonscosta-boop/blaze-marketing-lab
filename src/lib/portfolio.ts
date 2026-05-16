@@ -20,7 +20,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Cliente em breve",
     category: "TAGS: STRATEGY · BRANDING · CONTENT CREATION · PHOTOGRAPHY · INSTAGRAM\n\n\n",
     summary:
-      "The brief:\n\nEm breve compartilharemos a apresentação completa deste projeto.\n\nOur approach:\n\nEstratégia de marca e produção de conteúdo social-first desenvolvidas para conectar o produto ao dia a dia do público.\n\nThe result:\n\nCase em andamento — números e destaques serão atualizados em breve.",
+      "The brief:\n\nOficina Amor is a restoration and upholstery studio based in Portugal. They do bespoke restoration work and run hands-on workshops. The goal was to build their online presence, get them in front of the right people, and fill the workshops.\n\nOur approach:\n\nWe built a content strategy around the craft itself: showing the process, the before and after, the detail of the work. Content that makes people stop, appreciate what restoration and upholstery really involves, and want to be part of it. Part of the production was shot on location in Portugal.\n\nThe result:\n\nThis is an ongoing partnership.\nIn 3 months, the account grew by over 1,000 followers. The workshops have been fully booked ever since.",
     src: "https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=800&q=80",
     alt: "Marca de alimentação",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/3]",

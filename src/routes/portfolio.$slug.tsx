@@ -59,7 +59,7 @@ function PortfolioDetail() {
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {(item.videos ?? [null, null, null]).map((src, i) => (
+          {(item.videos ?? [null, null, null]).map((src: string | null, i: number) => (
             <div
               key={i}
               className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background"

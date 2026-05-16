@@ -1,51 +1,110 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { portfolioItems } from "@/lib/portfolio";
 
 export const Route = createFileRoute("/trabalhos")({
   head: () => ({
     meta: [
       { title: "Trabalhos — FIG" },
-      { name: "description", content: "Cases de vídeo e tráfego pago feitos pela FIG." },
+      { name: "description", content: "Portfólio de trabalhos da FIG: branding, conteúdo, social e tráfego pago." },
+      { property: "og:title", content: "Trabalhos — FIG" },
+      { property: "og:description", content: "Portfólio de trabalhos da FIG: branding, conteúdo, social e tráfego pago." },
     ],
   }),
   component: TrabalhosPage,
 });
 
-const works = [
-  { brand: "Pluma DTC", tag: "DTC · Beleza", result: "CAC -52% em 90 dias" },
-  { brand: "Norte Café", tag: "F&B · E-commerce", result: "ROAS 4.8x no Meta" },
-  { brand: "Studio Vento", tag: "Arquitetura", result: "+340% leads qualificados" },
-  { brand: "Ânfora Wines", tag: "Vinhos", result: "12M+ views orgânicos" },
-];
-
 function TrabalhosPage() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">Trabalhos</p>
-      <h1 className="mt-3 max-w-3xl font-display text-6xl leading-[0.95] md:text-7xl">
-        Marcas que <span className="italic">apareceram</span>.
-      </h1>
+    <>
+      {/* HERO */}
+      <section className="bg-cream px-6 pt-20 pb-12 md:pt-28">
+        <div className="mx-auto max-w-7xl text-center">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand/70">Portfólio</p>
+          <h1 className="mt-4 font-display text-5xl leading-[0.95] text-brand md:text-7xl">
+            Marcas que <span className="italic">apareceram</span>.
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-base text-brand/80 md:text-lg">
+            Uma seleção dos projetos em que ajudamos marcas a construir presença, comunidade e resultado nas redes sociais.
+          </p>
+        </div>
+      </section>
 
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
-        {works.map((w, i) => (
-          <article
-            key={w.brand}
-            className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-border"
-            style={{
-              background: i % 2 === 0
-                ? "linear-gradient(135deg, oklch(0.45 0.30 275), oklch(0.62 0.22 278))"
-                : "linear-gradient(135deg, oklch(0.20 0.05 280), oklch(0.93 0.025 350))",
-            }}
+      {/* GALLERY MOSAIC */}
+      <section className="bg-cream px-6 pb-20 pt-8">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-5">
+          {portfolioItems.map((img) => (
+            <Link
+              key={img.slug}
+              to="/portfolio/$slug"
+              params={{ slug: img.slug }}
+              className={`group overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
+              aria-label={`Ver projeto: ${img.title}`}
+            >
+              {img.coverVideo ? (
+                <video
+                  src={img.coverVideo}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  playsInline
+                  muted
+                  loop
+                  autoPlay
+                  preload="metadata"
+                  aria-label={img.alt}
+                />
+              ) : (
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className={`h-full w-full ${img.fit === "contain" ? "object-contain p-6" : "object-cover"} transition duration-500 group-hover:scale-105`}
+                />
+              )}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* PROJECTS LIST */}
+      <section className="bg-cream px-6 pb-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="font-display text-3xl text-brand md:text-4xl">Todos os projetos</h2>
+          <div className="mt-10 divide-y divide-brand/15 border-t border-brand/15">
+            {portfolioItems.map((p) => (
+              <Link
+                key={p.slug}
+                to="/portfolio/$slug"
+                params={{ slug: p.slug }}
+                className="group grid grid-cols-1 gap-4 py-8 transition md:grid-cols-12 md:items-center"
+              >
+                <p className="font-display text-2xl text-brand md:col-span-4 md:text-3xl">
+                  {p.title}
+                </p>
+                <p className="text-xs uppercase tracking-wider text-brand/60 md:col-span-6">
+                  {p.category.split("\n")[0]}
+                </p>
+                <span className="text-sm text-brand transition group-hover:translate-x-1 md:col-span-2 md:text-right">
+                  Ver projeto →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-brand px-6 py-20 text-primary-foreground">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-display text-4xl leading-tight md:text-5xl">
+            Quer ser o próximo case?
+          </h2>
+          <Link
+            to="/contato"
+            className="mt-10 inline-flex rounded-full border border-primary-foreground/70 px-8 py-3 text-sm transition hover:bg-primary-foreground/10"
           >
-            <div className="absolute inset-0 flex flex-col justify-between p-8 text-cream">
-              <p className="text-xs uppercase tracking-widest opacity-80">{w.tag}</p>
-              <div>
-                <p className="font-display text-5xl">{w.brand}</p>
-                <p className="mt-2 text-sm opacity-80">{w.result}</p>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
+            Fale com a gente
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

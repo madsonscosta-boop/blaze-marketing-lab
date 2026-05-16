@@ -68,7 +68,7 @@ export const portfolioItems: PortfolioItem[] = [
     slug: "esporte",
     title: "Design Biennale Rotterdam",
     client: "Cliente em breve",
-    category: "TAGS: STRATEGY · VIDEO · PERFORMANCE · META ADS · INSTAGRAM · TIKTOK\n\n\n",
+    category: "TAGS: COMMUNICATIONS STRATEGY · SOCIAL MEDIA MANAGEMENT · CONTENT PLANNING · BRAND LAUNCH\n\n ",
     summary:
       "The brief:\n\nAn inaugural design festival across 12 locations in Rotterdam, featuring over 100 participating designers. No existing audience, no playbook. Built from zero.\n\nOur approach:\n\nBrought on as communications manager to build the full digital presence from scratch. We developed the Instagram strategy, managed day-to-day content, and coordinated visual output across 100+ designers and partners — working with a graphic designer to keep a sprawling programme feeling like one coherent event.\n\nThe result:\n\n0 to 6,000 followers for an account that didn't exist before launch. A community built around an inaugural edition strong enough to return for a second.",
     src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1100&q=80",

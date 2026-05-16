@@ -9,8 +9,8 @@ export const Route = createFileRoute("/portfolio/$slug")({
   },
   head: ({ loaderData }) => {
     const item = loaderData?.item;
-    const title = item ? `${item.title} — FIG` : "Portfólio — FIG";
-    const description = item?.summary ?? "Projeto do portfólio FIG.";
+    const title = item ? `${item.title} — FIG` : "Portfolio — FIG";
+    const description = item?.summary ?? "FIG portfolio project.";
     return {
       meta: [
         { title },
@@ -23,15 +23,15 @@ export const Route = createFileRoute("/portfolio/$slug")({
   },
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-6 py-32 text-center">
-      <h1 className="font-display text-4xl">Projeto não encontrado</h1>
+      <h1 className="font-display text-4xl">Project not found</h1>
       <Link to="/" className="mt-6 inline-block underline">
-        Voltar para a home
+        Back to home
       </Link>
     </div>
   ),
   errorComponent: ({ error }) => (
     <div className="mx-auto max-w-3xl px-6 py-32 text-center">
-      <h1 className="font-display text-3xl">Algo deu errado</h1>
+      <h1 className="font-display text-3xl">Something went wrong</h1>
       <p className="mt-4 text-muted-foreground">{error.message}</p>
     </div>
   ),
@@ -46,7 +46,7 @@ function PortfolioDetail() {
     <article className="bg-cream">
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <Link to="/" className="text-sm text-brand/70 hover:text-brand">
-          ← Voltar
+          ← Back
         </Link>
         <p className="mt-6 font-display text-sm uppercase tracking-widest text-brand/60 whitespace-pre-line">
           {item.category}
@@ -87,7 +87,7 @@ function PortfolioDetail() {
               >
                 <img
                   src={src}
-                  alt={`${item.title} — imagem ${i + 1}`}
+                  alt={`${item.title} — image ${i + 1}`}
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -109,13 +109,13 @@ function PortfolioDetail() {
                     loop
                     autoPlay
                     preload="metadata"
-                    aria-label={`${item.title} — vídeo ${i + 1}`}
+                    aria-label={`${item.title} — video ${i + 1}`}
                   >
                     <source src={src} type="video/mp4" />
                   </video>
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center bg-brand/5 text-xs uppercase tracking-widest text-brand/50">
-                    Vídeo {i + 1}
+                    Video {i + 1}
                   </div>
                 )}
               </div>
@@ -125,7 +125,7 @@ function PortfolioDetail() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <h2 className="font-display text-2xl text-brand">Outros projetos</h2>
+        <h2 className="font-display text-2xl text-brand">Other projects</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
           {others.map((p) => (
             <Link

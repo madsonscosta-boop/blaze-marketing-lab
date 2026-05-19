@@ -94,6 +94,19 @@ function PortfolioDetail() {
               </div>
             ))}
           </div>
+        ) : item.slug === "esporte" && item.videos && item.videos.length === 2 ? (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 items-center">
+            <div className="relative overflow-hidden rounded-3xl bg-black sm:col-span-2 aspect-video">
+              <video className="h-full w-full object-contain" playsInline muted loop autoPlay preload="metadata">
+                <source src={item.videos[0]} type="video/mp4" />
+              </video>
+            </div>
+            <div className="relative overflow-hidden rounded-3xl bg-black aspect-[9/16]">
+              <video className="h-full w-full object-cover" playsInline muted loop autoPlay preload="metadata">
+                <source src={item.videos[1]} type="video/mp4" />
+              </video>
+            </div>
+          </div>
         ) : (
           <div className={`grid grid-cols-1 gap-4 ${item.videos && item.videos.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
             {(item.videos ?? [null, null, null]).map((src: string | null, i: number) => (

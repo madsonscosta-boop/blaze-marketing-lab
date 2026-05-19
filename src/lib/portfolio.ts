@@ -40,9 +40,10 @@ export const portfolioItems: PortfolioItem[] = [
     category: "TAGS: BRANDING · ONLINE PRESENCE · PAID ADS · SOCIAL STRATEGY\n\n\n",
     summary:
       "The brief:\n\nHanno has been helping people in the Netherlands navigate the mortgage process for over 7 years. We came on board to help them build a stronger digital presence and reach new audiences.\n\nOur approach:\n\nWe're working with Hanno across two fronts: building a brand identity that feels trustworthy and clear, and running paid ads across two platforms to start generating visibility and leads. Everything is designed to grow with them as the business scales.\n\nThe result:\n\nThis is an ongoing partnership - results coming soon.",
-    src: "/portfolio/hanno/cover.png",
+    src: "/portfolio/hanno/cover.mov",
     alt: "Hanno",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
+    coverVideo: "/portfolio/hanno/cover.mov",
     videos: ["/portfolio/hanno/video-1.mov"],
   },
   {

@@ -71,7 +71,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Client coming soon",
     category: "TAGS: COMMUNICATIONS STRATEGY · SOCIAL MEDIA MANAGEMENT · CONTENT PLANNING · BRAND LAUNCH\n\n ",
     summary:
-      "The brief:\n\nAn inaugural design festival across 12 locations in Rotterdam, featuring over 100 participating designers. No existing audience, no playbook. Built from zero.\n\nOur approach:\n\nBrought on as communications manager to build the full digital presence from scratch. We developed the Instagram strategy, managed day-to-day content, and coordinated visual output across 100+ designers and partners — working with a graphic designer to keep a sprawling programme feeling like one coherent event.\n\nThe result:\n\n0 to 6,000 followers for an account that didn't exist before launch. A community built around an inaugural edition strong enough to return for a second.",
+      "The brief:  An inaugural design festival across 12 locations in Rotterdam, featuring over 100 participating designers. No existing audience, no playbook. Built from zero.  Our approach:  Brought on as communications manager to build the full digital presence from scratch. We developed the Instagram strategy, managed day-to-day content, and coordinated visual output across 100+ designers and partners — working with a graphic designer to keep a sprawling programme feeling like one coherent event.  The result:  0 to 6,000 followers for an account that didn't exist before launch. A community built around an inaugural edition strong enough to return for a second.\n\nVideo & audio by Jeff Hoogendijk\nScript by FIG Agency\n",
     src: "/portfolio/biennale/cover.jpg",
     alt: "Design Biennale Rotterdam",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",

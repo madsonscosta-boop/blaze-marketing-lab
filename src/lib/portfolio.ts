@@ -43,10 +43,7 @@ export const portfolioItems: PortfolioItem[] = [
     src: "/portfolio/hanno/cover.png",
     alt: "Hanno",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
-    images: [
-      "/portfolio/hanno/image-1.png",
-      "/portfolio/hanno/image-2.png",
-    ],
+    videos: ["/portfolio/hanno/video-1.mov"],
   },
   {
     slug: "ori-mart",

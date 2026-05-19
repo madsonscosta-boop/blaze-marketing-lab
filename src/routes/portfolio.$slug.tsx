@@ -94,6 +94,14 @@ function PortfolioDetail() {
               </div>
             ))}
           </div>
+        ) : item.videos && item.videos.length === 1 ? (
+          <div className="flex justify-center">
+            <div className="relative aspect-video w-full max-w-4xl overflow-hidden rounded-3xl bg-black">
+              <video className="h-full w-full object-contain" playsInline muted loop autoPlay preload="metadata" controls>
+                <source src={item.videos[0]} type="video/mp4" />
+              </video>
+            </div>
+          </div>
         ) : item.slug === "esporte" && item.videos && item.videos.length === 2 ? (
           <div className="flex flex-row gap-4 items-stretch justify-center h-[60vh]">
             <div className="relative h-full aspect-video overflow-hidden rounded-3xl bg-black">

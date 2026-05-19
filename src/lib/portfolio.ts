@@ -90,6 +90,11 @@ export const portfolioItems: PortfolioItem[] = [
     src: "/portfolio/wasteland/cover.png",
     alt: "Wasteland - Out of Sight",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
+    images: [
+      "/portfolio/wasteland/image-1.jpeg",
+      "/portfolio/wasteland/image-2.jpeg",
+      "/portfolio/wasteland/image-3.jpeg",
+    ],
   },
 ];
 

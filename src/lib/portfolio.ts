@@ -72,7 +72,7 @@ export const portfolioItems: PortfolioItem[] = [
       "The brief:  An inaugural design festival across 12 locations in Rotterdam, featuring over 100 participating designers. No existing audience, no playbook. Built from zero.  Our approach:  Brought on as communications manager to build the full digital presence from scratch. We developed the Instagram strategy, managed day-to-day content, and coordinated visual output across 100+ designers and partners — working with a graphic designer to keep a sprawling programme feeling like one coherent event.  The result:  0 to 6,000 followers for an account that didn't exist before launch. A community built around an inaugural edition strong enough to return for a second.\n\nVideo & audio by Jeff Hoogendijk\nScript by FIG Agency\n",
     src: "/portfolio/biennale/cover.mp4",
     alt: "Design Biennale Rotterdam",
-    cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
+    cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
     coverVideo: "/portfolio/biennale/cover.mp4",
     videos: [
       "/portfolio/biennale/video-1.mp4",
@@ -88,7 +88,7 @@ export const portfolioItems: PortfolioItem[] = [
       "The brief:  Wasteland is a Rotterdam collective working at the intersection of art and ecology — exhibitions, performances, field trips, workshops. They needed someone to own their communications and make a complex, fragmented programme feel alive and accessible online.  Our approach:  Brought on as communications manager across Instagram, website, and external communications. Coordinated content from 20+ artists and collaborators across a full season, working with a graphic designer on visual templates and consistency.  The result:  A season of programming communicated clearly, with a growing and engaged community. The Instagram became a genuine reflection of the organisation — not just an announcement board.\n\nGraphic design by Martin Foucaut\n",
     src: "/portfolio/wasteland/cover.png",
     alt: "Wasteland - Out of Sight",
-    cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
+    cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
     images: [
       "/portfolio/wasteland/image-1.jpeg",
       "/portfolio/wasteland/image-2.jpeg",

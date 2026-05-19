@@ -95,7 +95,7 @@ function PortfolioDetail() {
             ))}
           </div>
         ) : item.slug === "esporte" && item.videos && item.videos.length === 2 ? (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 items-stretch">
+          <div className="grid grid-cols-3 gap-4 items-stretch">
             <div className="relative overflow-hidden rounded-3xl bg-black sm:col-span-2 aspect-video">
               <video className="h-full w-full object-contain" playsInline muted loop autoPlay preload="metadata">
                 <source src={item.videos[0]} type="video/mp4" />

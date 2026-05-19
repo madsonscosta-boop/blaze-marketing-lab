@@ -95,7 +95,7 @@ function PortfolioDetail() {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className={`grid grid-cols-1 gap-4 ${item.videos && item.videos.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
             {(item.videos ?? [null, null, null]).map((src: string | null, i: number) => (
               <div
                 key={i}

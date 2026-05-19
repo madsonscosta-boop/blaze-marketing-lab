@@ -75,6 +75,10 @@ export const portfolioItems: PortfolioItem[] = [
     src: "/portfolio/biennale/cover.jpg",
     alt: "Design Biennale Rotterdam",
     cls: "md:col-span-2 md:row-span-1 aspect-[16/10]",
+    videos: [
+      "/portfolio/biennale/video-1.mp4",
+      "/portfolio/biennale/video-2.mp4",
+    ],
   },
   {
     slug: "estadio",

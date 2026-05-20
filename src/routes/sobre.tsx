@@ -19,17 +19,22 @@ function SobrePage() {
       </h1>
       <div className="mt-12 space-y-6 text-lg text-foreground/85">
         <p>
-          FIG was born from the frustration of seeing great brands get ignored. Not for
-          lack of product. For lack of a story told well — and distributed even better.
+          FIG is a digital marketing studio based in Rotterdam, helping brands grow through
+          strategy, content, paid visibility and digital presence.
         </p>
         <p>
-          We're a small, multidisciplinary team that brings together video production,
-          performance and strategy. We work with a handful of brands each month, because
-          depth is what makes the difference.
+          We work as strategic partners, not just executors. That means we think alongside
+          our clients, understand what makes their brand meaningful, and create marketing
+          that feels clear, intentional and connected to real business goals.
         </p>
         <p>
-          We don't make pretty reports to justify meetings. We build campaigns that sell
-          and videos that stop the feed.
+          Behind FIG are two people with backgrounds in communications, PR and paid media
+          who decided to join forces to build something of their own. We are ambitious,
+          hands-on, and genuinely invested in seeing the brands we work with grow.
+        </p>
+        <p>
+          For us, marketing is not just about being seen. It is about being understood,
+          remembered and chosen.
         </p>
       </div>
 

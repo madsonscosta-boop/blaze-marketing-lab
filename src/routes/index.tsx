@@ -36,7 +36,8 @@ function Index() {
             We help brands build awareness, create meaningful content, and grow engaged communities through strategic digital marketing.
           </p>
             <Link
-              to="/contato"
+              to="/"
+              hash="contato"
               className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10"
             >
               <span>Like what you see?</span>

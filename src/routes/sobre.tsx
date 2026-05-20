@@ -42,7 +42,7 @@ function SobrePage() {
         {[
           { k: "2026", v: "" },
           { k: "40+", v: "" },
-          { k: "12", v: "People on the team" },
+          { k: "12", v: "" },
         ].map((s) => (
           <div key={s.k} className="rounded-2xl border border-border bg-card p-6">
             <p className="font-display text-4xl text-brand-glow/50">{s.k}</p>

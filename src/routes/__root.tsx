@@ -126,6 +126,14 @@ function Header() {
 
       {open && (
         <div className="fixed inset-0 z-40 bg-foreground/95 backdrop-blur-xl animate-fade-in">
+          <button
+            type="button"
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+            className="absolute right-6 top-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-background/10 text-background transition hover:bg-background/20"
+          >
+            <X size={24} />
+          </button>
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
             <Link to="/" hash="servicos" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Services</Link>
             <Link to="/" hash="portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" activeProps={{ className: "text-brand-glow" }} onClick={() => setOpen(false)}>Work</Link>

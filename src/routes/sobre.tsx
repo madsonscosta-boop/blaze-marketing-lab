@@ -51,12 +51,6 @@ function SobrePage() {
         ))}
       </div>
 
-      <Link
-        to="/contato"
-        className="mt-16 inline-flex rounded-full bg-brand px-7 py-3.5 text-base font-medium text-primary-foreground hover:bg-brand-glow"
-      >
-        Work with FIG →
-      </Link>
     </section>
   );
 }

@@ -179,7 +179,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-white/60">
           <span>© {new Date().getFullYear()} FIG. All rights reserved.</span>
-          <span>Made with care, in Amsterdan</span>
+          <span>Made with care, in Rotterdam</span>
         </div>
       </div>
     </footer>

@@ -40,12 +40,12 @@ function SobrePage() {
 
       <div className="mt-16 grid gap-6 sm:grid-cols-3">
         {[
-          { k: "", v: "" },
+          { k: "2026", v: "" },
           { k: "40+", v: "Brands served" },
           { k: "12", v: "People on the team" },
         ].map((s) => (
           <div key={s.k} className="rounded-2xl border border-border bg-card p-6">
-            <p className="font-display text-4xl text-brand-glow">{s.k}</p>
+            <p className="font-display text-4xl text-brand-glow/50">{s.k}</p>
             <p className="mt-1 text-sm text-muted-foreground">{s.v}</p>
           </div>
         ))}

@@ -108,10 +108,10 @@ function Index() {
                 </PopoverTrigger>
                 <PopoverContent
                   side="top"
-                  className="max-w-xs rounded-2xl border-brand/30 bg-cream text-brand"
+                  className="max-w-xs rounded-2xl border-cream/30 bg-[#6f64ff] text-cream"
                 >
                   <p className="font-display text-lg">{s.t}</p>
-                  <p className="mt-2 text-sm text-brand/80">{s.d}</p>
+                  <p className="mt-2 text-sm text-cream/80">{s.d}</p>
                 </PopoverContent>
               </Popover>
             ))}

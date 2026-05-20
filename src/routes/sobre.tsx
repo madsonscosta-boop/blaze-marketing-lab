@@ -15,7 +15,7 @@ function SobrePage() {
     <section className="mx-auto max-w-4xl px-6 py-24">
       <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">About</p>
       <h1 className="mt-3 font-display text-6xl leading-[0.95] md:text-7xl">
-        <span className="italic">Marketing que faz marcas serem compreendidas, lembradas e escolhidas.</span>
+        <span className="italic">Marketing that makes brands understood, remembered and chosen.</span>
       </h1>
       <div className="mt-12 space-y-6 text-lg text-foreground/85">
         <p>

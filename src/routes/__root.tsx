@@ -105,10 +105,11 @@ function Header() {
       <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-[#0e1020]/10 bg-[#efdfe7] px-2 py-2 text-[#0e1020] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
         <Link
           to="/"
+          resetScroll={false}
           className="flex items-center pl-2"
           onClick={() => {
             setOpen(false);
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
           }}
         >
           <img src={logo} alt="FIG" className="h-7 w-auto" />

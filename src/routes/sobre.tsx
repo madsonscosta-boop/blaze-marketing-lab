@@ -40,7 +40,7 @@ function SobrePage() {
 
       <div className="mt-16 grid gap-6 sm:grid-cols-3">
         {[
-          { k: "2021", v: "2026" },
+          { k: "", v: "" },
           { k: "40+", v: "Brands served" },
           { k: "12", v: "People on the team" },
         ].map((s) => (

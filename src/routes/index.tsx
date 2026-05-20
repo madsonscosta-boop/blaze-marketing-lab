@@ -32,9 +32,9 @@ function Index() {
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
               A social-first creative agency for brands across every industry.
             </p>
-            <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
-              We strengthen brand awareness and grow communities on social media through content that engages.
-            </p>
+          <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
+            We help brands build awareness, create meaningful content, and grow engaged communities through strategic digital marketing.
+          </p>
             <Link
               to="/contato"
               className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10"

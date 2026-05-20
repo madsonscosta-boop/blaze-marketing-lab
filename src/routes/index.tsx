@@ -48,7 +48,7 @@ function Index() {
 
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
+        <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
           {portfolioItems.map((img) => (
             <Link
               key={img.slug}
